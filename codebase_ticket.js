@@ -104,7 +104,7 @@ function getTickets(){
     if(cgID == null){
       sheet.getRange(rowNo, 5).setValue('');
     }else{
-      var cg_url = "https://code.google.com/a/google.com/p/android-webmaster/issues/detail?id="+cgID[1];
+      var cg_url = "{URL for client ticketing system}"+cgID[1];
       var cg_hyperlink = hyp + cg_url + quot + semi + quot + cgID[1] + quot + clos;
       sheet.getRange(rowNo, 5).setValue(cg_hyperlink);
     }
